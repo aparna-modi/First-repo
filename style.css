@@ -1,0 +1,32 @@
+@keyframes faddingEffect {
+    from {
+        opacity :0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.ball{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: rgb(132, 102, 193);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: bounce 3s ease infinite;
+}
+.ballWrapper{
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    display: flex;
+}
+.ball > p{
+    color: white;
+}
+@keyframes bounce {
+    from {}
+    50% {transform: translateY(-200px);}
+    to {}
+}
